@@ -1,0 +1,217 @@
+.bgimage{
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+body{
+    background-color: hsl(235, 16%, 14%);
+}
+
+.main{
+    position: relative;
+}
+
+
+.heading{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 10px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+
+.countdown{
+    position: absolute;
+    top: 300px;
+    left: 450px;
+}
+
+.block{
+    position: relative;
+    width: 125px;
+    height: 125px;
+    background-color: hsl(236, 21%, 26%);
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 10px hsl(234, 17%, 12%);
+}
+
+.cut-out-r{
+    width: 7.5px;
+    height: 15px;
+    border-radius: 7.5px 0 0 7.5px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.cut-out-l{
+    width: 7.5px;
+    height: 15px;
+    border-radius: 0 7.5px 7.5px 0;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+.folded{
+    border: 2px wheat;
+    /* border-style: inset;
+    width: 100%; */
+    border-radius: 0 0 5px 0;
+    top: 175px;
+    left: 175px;
+    opacity: 0;
+    border-top: none;
+    border-left: none;
+}
+
+a{
+    color: hsl(237, 18%, 59%);
+    text-decoration: none;
+    margin: 20px;
+}
+
+a:hover{
+    color: hsl(345, 95%, 68%);
+}
+
+.mountains{
+    position: relative;
+}
+
+.icons{
+    position: absolute;
+    top: 100px;
+    left: 700px;
+}
+
+.num{
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 700;
+    color: hsl(345, 95%, 68%);
+    font-size: 70px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.title p{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: .75rem;
+    letter-spacing: 7px;
+    color: hsl(237, 18%, 59%);
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 5px;
+}
+
+.d{
+    position: relative;
+    bottom: 70px;
+    left: 510px;
+}
+
+.h{
+    position: relative;
+    bottom: 70px;
+    left: 630px;
+}
+
+.m{
+    position: relative;
+    bottom: 70px;
+    left: 720px;
+}
+
+.s{
+    position: relative;
+    bottom: 70px;
+    left: 800px;
+}
+
+@media screen and (max-width: 667px) {
+    .main{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .heading{
+        position: fixed;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .countdown{
+        position: fixed;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+    }
+    .block{
+        width: 75px;
+        height: 75px;
+        padding: 20px;
+        position: relative;
+    }
+    .cut-out-r{
+        width: 5px;
+        height: 10px;
+        border-radius: 5px 0 0 5px;
+        top: 50px; 
+    }
+    
+    .cut-out-l{
+        width: 5px;
+        height: 10px;
+        border-radius: 0 5px 5px 0;
+        top: 50px;
+    }
+    .num{
+        font-size: 60px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .d{
+        position: relative;
+        bottom: 145px;
+        left: 465px;
+    }
+    
+    .h{
+        position: relative;
+        bottom: 145px;
+        left: 530px;
+    }
+    
+    .m{
+        position: relative;
+        bottom: 145px;
+        left: 580px;
+    }
+    
+    .s{
+        position: relative;
+        bottom: 145px;
+        left: 600px;
+    }
+    .icons{
+        left: 600px;
+    }
+}
